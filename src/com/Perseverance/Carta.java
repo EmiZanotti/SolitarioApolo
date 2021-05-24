@@ -5,16 +5,13 @@ import javax.swing.*;
 public class Carta {
 
     enum Palo{
-        Diamantes, Treboles, Picas, Corazones;
-
+        Diamantes, Corazones, Treboles, Picas;
 
     }
 
     enum Valor{
         As, Dos, Tres, Cuatro, Cinco, Seis, Siete, Ocho, Nueve, Diez, J, Q, K;
 
-        private static final Valor[] valores = Valor.values();
-        public static Valor getValor(int i){ return Valor.valores[i]; }
     }
 
     private final Valor valor;
