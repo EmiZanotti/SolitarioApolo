@@ -4,13 +4,21 @@ import javax.swing.*;
 
 public class Carta {
 
-    enum Palo{
+    public enum Palo{
         Diamantes, Corazones, Treboles, Picas;
+
+        private static final Palo[] palos = Palo.values();
+        public static Palo getPalo(int i){
+            return Palo.palos[i];
+        }
 
     }
 
-    enum Valor{
+    public enum Valor{
         As, Dos, Tres, Cuatro, Cinco, Seis, Siete, Ocho, Nueve, Diez, J, Q, K;
+
+        private static final Valor[] valores = Valor.values();
+        public static Valor getValor(int i){ return Valor.valores[i]; }
 
     }
 
